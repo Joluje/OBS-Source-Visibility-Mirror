@@ -1,6 +1,6 @@
 local obs = obslua
 local sceneItem = nil
-local source_name = ''
+local sourceName = ''
 local sceneName = ''
 local triggerSource = nil
 local triggerSourceName = ''
@@ -12,7 +12,7 @@ local function findSceneItem()
         local scene = obs.obs_scene_from_source(src)
         obs.obs_source_release(src)
         if scene then
-            sceneItem = obs.obs_scene_find_source(scene, source_name)
+            sceneItem = obs.obs_scene_find_source(scene, sourceName)
             return true
         end
     end
@@ -36,13 +36,13 @@ end
 
 function script_update(settings) 
     triggerSourceName = obs.obs_data_get_string(settings, 'trsource')
-    source_name = obs.obs_data_get_string(settings, 'source')
+    sourceName = obs.obs_data_get_string(settings, 'source')
     sceneName = obs.obs_data_get_string(settings, 'scene')
     triggerSourceScene = obs.obs_data_get_string(settings, 'trscene')
     print('triggerSourceName')
     print(triggerSourceName)
     print('source name')
-    print(source_name)
+    print(sourceName)
     print("script_update")
 end
 
@@ -93,18 +93,19 @@ local props = obs.obs_properties_create()
     end
     obs.source_list_release(sources)
 
-
     obs.obs_properties_add_text(
         props,
         'scene',
         'Display-Scene',
         obs.OBS_TEXT_DEFAULT)
     
-
-
     return props 
 end
 
+
+
+
+   
 
 
 
