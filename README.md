@@ -1,5 +1,5 @@
 # OBS-Source-Visibility-Mirror
-This script mirrors the visbility of a source to another source.
+This script mirrors the visibility of one source to another source.
 
 # Deutsch:
 Mit diesem Skript kann man eine Trigger-Quelle auswählen und die Sichtbarkeit auf eine andere Quelle (Display-Quelle) zu übertragen. 
