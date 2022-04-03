@@ -2,7 +2,7 @@
 This script mirrors the visibility of one source to another source.
 
 # Deutsch:
-Mit diesem Skript kann man eine Trigger-Quelle(Source) auswählen und die Sichtbarkeit auf eine andere Quelle (Display-Source) übertragen. 
+Mit diesem Skript kann man eine Trigger-Quelle(Source) auswählen und die Sichtbarkeit auf eine andere Quelle (Display-Source) spiegeln. 
 
 Setup: 
 1. In Obs über den Werkzeugetab das Skripte Fenster öffnen
